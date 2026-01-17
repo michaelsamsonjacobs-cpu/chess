@@ -1,0 +1,39 @@
+# Large backup files
+*.tar.gz
+ChessGuard_Backup_*.tar.gz
+
+# Videos
+*.mp4
+*.webm
+*.avi
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Node
+node_modules/
+
+# Models (too large for Git)
+# models/*.pkl
