@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "chess-observer",
+    "buildCommand": "",
+    "outputDirectory": "frontend",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
