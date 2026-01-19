@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    <div class="card-header" style="margin-bottom: 1.5rem;">
+        <h3>⚡ Batch Analysis Jobs</h3>
+        <p class="text-muted">Monitoring background mass-analysis tasks.</p>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Target</th>
+                    <th>Platform</th>
+                    <th>Progress</th>
+                    <th>Flagged</th>
+                    <th>Risk Level</th>
+                    <th>Started</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                <tr>
+                    <td><span style="font-family: monospace; opacity: 0.7;">#{{ job.id }}</span></td>
+                    <td><a href="/player/{{ job.username }}"
+                            style="color: white; font-weight: 600; text-decoration: none;">{{ job.username }}</a></td>
+                    <td>{{ job.source }}</td>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span>{{ job.analyzed_count }} / {{ job.total_games }}</span>
+                        </div>
+                    </td>
+                    <td>
+                        {% if job.flagged_count > 0 %}
+                        <strong style="color: var(--danger);">{{ job.flagged_count }}</strong>
+                        {% else %}
+                        <span style="opacity: 0.5;">0</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if job.risk_level == 'critical' %}
+                        <span class="badge badge-danger">CRITICAL</span>
+                        {% elif job.risk_level == 'high' %}
+                        <span class="badge badge-warning">HIGH</span>
+                        {% else %}
+                        <span class="badge">{{ job.risk_level }}</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ job.started_at.strftime('%Y-%m-%d %H:%M') if job.started_at else '-' }}</td>
+                    <td>
+                        {% if job.status.value == 'running' %}
+                        <span class="badge badge-warning">RUNNING</span>
+                        {% elif job.status.value == 'completed' %}
+                        <span class="badge badge-success">DONE</span>
+                        {% else %}
+                        <span class="badge">{{ job.status.value }}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

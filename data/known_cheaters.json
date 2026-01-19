@@ -1,0 +1,593 @@
+{
+  "last_updated": "2025-12-20",
+  "titled_cheaters": [
+    {
+      "title": "GM",
+      "username": "e-shaposhnikov",
+      "name": "Evgeny Shaposhnikov",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "GM",
+      "username": "tigranlpetrosyan",
+      "name": "Tigran Petrosian",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "GM",
+      "username": "eagle_pada",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "IM",
+      "username": "drholmes13",
+      "name": "Armin Juhasz",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "IM",
+      "username": "maximlavrov",
+      "name": "Maxim Lavrov",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "IM",
+      "username": "viktormatviishen",
+      "name": "Viktor Matviishen",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "IM",
+      "username": "fisher-human",
+      "name": "Emil Mirzoev",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "andreimacovei2000",
+      "name": "Andrei Macovei",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "arash-tiger",
+      "name": "Arash Daghli",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "brizuelaronald",
+      "name": "Brizuela Ronald",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "abrito99",
+      "name": "Ruben Domingo Nunez",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "vahe_dan1",
+      "name": "Vahe Danielyan",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "arm-tal",
+      "name": "Vahe Danielyan",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "xavielhumilde_1999",
+      "name": "Xavier Martinez Pla",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "nearestway",
+      "name": "Sergey Kornev",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "anand-carlsen",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "FM",
+      "username": "tsakos2731",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "CM",
+      "username": "aklanion",
+      "name": "Jurij Khalakhan",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "tablevolleyball",
+      "name": "Aleksandrs Jazdanovs",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "angulo07",
+      "name": "Oscar Angulo",
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "flawless2018",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "bigmak2500",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "brauliocuarta",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "title": "NM",
+      "username": "weiyi1999",
+      "name": null,
+      "platform": "chesscom",
+      "status": "closed:fair_play_violations"
+    },
+    {
+      "username": "danoooooooliga",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298518.4292367
+    },
+    {
+      "username": "x-9471214856",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298586.384049
+    },
+    {
+      "username": "fk999jimmy",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298595.3121417
+    },
+    {
+      "username": "tuyhoaphuyen",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298629.4363267
+    },
+    {
+      "username": "viga75",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298635.4874573
+    },
+    {
+      "username": "xnzdavid",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298656.4909787
+    },
+    {
+      "username": "monsime",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298660.3231747
+    },
+    {
+      "username": "mikhailtal1705",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298661.4257472
+    },
+    {
+      "username": "ancharik1",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298667.6755817
+    },
+    {
+      "username": "speedrunner-67",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298669.4801953
+    },
+    {
+      "username": "tikilasc_2010",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298683.8191516
+    },
+    {
+      "username": "shinaka_onyoutube",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298696.1032345
+    },
+    {
+      "username": "chessique666",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298724.6727881
+    },
+    {
+      "username": "ianina52",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298731.440848
+    },
+    {
+      "username": "goran198421",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298747.9796786
+    },
+    {
+      "username": "blitzjean",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298748.1842766
+    },
+    {
+      "username": "kira_checkmate",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298748.2004313
+    },
+    {
+      "username": "nonoleptitrobot16",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298753.465377
+    },
+    {
+      "username": "crossbane",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298776.8807745
+    },
+    {
+      "username": "vlmgls",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298821.6087005
+    },
+    {
+      "username": "imaroundsound",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298824.0520196
+    },
+    {
+      "username": "terrifiedchess",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298827.6775162
+    },
+    {
+      "username": "johnwick2011",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298888.2473776
+    },
+    {
+      "username": "dahc1",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298888.2563488
+    },
+    {
+      "username": "ixnayonhombre",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298888.2767432
+    },
+    {
+      "username": "sahingor2gm",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298890.0581627
+    },
+    {
+      "username": "20_jota",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298909.5677993
+    },
+    {
+      "username": "hinachess2008",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298918.1292071
+    },
+    {
+      "username": "didi991huri",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298945.5029507
+    },
+    {
+      "username": "ammarkefi",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298946.7178493
+    },
+    {
+      "username": "hypattia",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298954.638177
+    },
+    {
+      "username": "king_bg03",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298967.0688295
+    },
+    {
+      "username": "marco_asensio_11",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298988.4812884
+    },
+    {
+      "username": "makarona01",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766298990.0516763
+    },
+    {
+      "username": "knightburial",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299003.080403
+    },
+    {
+      "username": "googlybear1901",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299004.5969827
+    },
+    {
+      "username": "iraq42r",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299004.7566626
+    },
+    {
+      "username": "supernoob03505",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299009.7118742
+    },
+    {
+      "username": "xyznoxx",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299009.725669
+    },
+    {
+      "username": "vet3009",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299009.7480228
+    },
+    {
+      "username": "x-9176888489",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299025.1114013
+    },
+    {
+      "username": "excercisee",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299048.9574559
+    },
+    {
+      "username": "rhystin14",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299051.4272957
+    },
+    {
+      "username": "amihikarunakamurapls",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299051.453235
+    },
+    {
+      "username": "blasphemous-w",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299079.6027508
+    },
+    {
+      "username": "ichigaxv",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299138.7075734
+    },
+    {
+      "username": "bean6-7",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299162.3604505
+    },
+    {
+      "username": "timofeirybakov",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299175.2495737
+    },
+    {
+      "username": "lilye4e5",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299181.5093184
+    },
+    {
+      "username": "idiotidly",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299192.737717
+    },
+    {
+      "username": "ryanwasxd",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299206.5499508
+    },
+    {
+      "username": "robertramazanfischer",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299209.3360972
+    },
+    {
+      "username": "suzuya48",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299280.1422844
+    },
+    {
+      "username": "winterxoxo",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299280.2996423
+    },
+    {
+      "username": "kinggenoxen",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299283.4854188
+    },
+    {
+      "username": "pamplonak",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299290.135415
+    },
+    {
+      "username": "light-speed74",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299316.2808115
+    },
+    {
+      "username": "azerichessmachine",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299338.5274537
+    },
+    {
+      "username": "thy_2025_330",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299353.659329
+    },
+    {
+      "username": "gamerzmub",
+      "platform": "chesscom",
+      "title": null,
+      "status": "closed:fair_play_violations",
+      "discovered_at": 1766299356.0596826
+    }
+  ]
+}

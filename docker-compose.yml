@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  auth:
+    build: ./auth
+    environment:
+      AUTH_JWT_SECRET: ${AUTH_JWT_SECRET:?Auth JWT secret is required}
+      AUTH_DATABASE_URL: ${AUTH_DATABASE_URL:-sqlite:///./data/auth.db}
+    volumes:
+      - auth_data:/app/data
+    ports:
+      - "8001:8001"
+
+  server:
+    build: ./server
+    depends_on:
+      - auth
+    environment:
+      SERVER_JWT_SECRET: ${SERVER_JWT_SECRET:?Server JWT secret is required}
+      SERVER_DATABASE_URL: ${SERVER_DATABASE_URL:-sqlite:///./data/server.db}
+    volumes:
+      - server_data:/app/data
+    ports:
+      - "8000:8000"
+
+  client:
+    build: ./client
+    depends_on:
+      - auth
+      - server
+    environment:
+      NODE_ENV: production
+    ports:
+      - "5173:5173"
+
+volumes:
+  auth_data:
+  server_data:

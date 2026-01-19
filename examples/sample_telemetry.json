@@ -1,0 +1,22 @@
+[
+  {"move_number": 1, "player": "white", "seconds": 12.0},
+  {"move_number": 1, "player": "black", "seconds": 14.0},
+  {"move_number": 2, "player": "white", "seconds": 9.0},
+  {"move_number": 2, "player": "black", "seconds": 11.0},
+  {"move_number": 3, "player": "white", "seconds": 15.0},
+  {"move_number": 3, "player": "black", "seconds": 18.0},
+  {"move_number": 4, "player": "white", "seconds": 8.0},
+  {"move_number": 4, "player": "black", "seconds": 13.0},
+  {"move_number": 5, "player": "white", "seconds": 20.0},
+  {"move_number": 5, "player": "black", "seconds": 25.0},
+  {"move_number": 6, "player": "white", "seconds": 10.0},
+  {"move_number": 6, "player": "black", "seconds": 9.0},
+  {"move_number": 7, "player": "white", "seconds": 7.0},
+  {"move_number": 7, "player": "black", "seconds": 16.0},
+  {"move_number": 8, "player": "white", "seconds": 6.0},
+  {"move_number": 8, "player": "black", "seconds": 17.0},
+  {"move_number": 9, "player": "white", "seconds": 5.0},
+  {"move_number": 9, "player": "black", "seconds": 8.0},
+  {"move_number": 10, "player": "white", "seconds": 14.0},
+  {"move_number": 10, "player": "black", "seconds": 19.0}
+]

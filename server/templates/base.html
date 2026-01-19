@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChessGuard – Professional Analysis</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-brand" style="justify-content: center;">
+        <img src="/assets/logo_2.png" alt="ChessGuard" class="sidebar-logo" style="height: 64px; margin: 0;">
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="/dashboard" class="nav-item">
+          <span class="nav-icon">📊</span>
+          <span class="nav-label">Dashboard</span>
+        </a>
+        <a href="/analyses" class="nav-item">
+          <span class="nav-icon">♟️</span>
+          <span class="nav-label">Analyzed Games</span>
+        </a>
+        <a href="/detective" class="nav-item">
+          <span class="nav-icon">🔍</span>
+          <span class="nav-label">Detective Mode</span>
+        </a>
+        <a href="/connect" class="nav-item">
+          <span class="nav-icon">🔗</span>
+          <span class="nav-label">Link Account</span>
+        </a>
+        <a href="/cheaters" class="nav-item">
+          <span class="nav-icon">🚷</span>
+          <span class="nav-label">Cheater DB</span>
+        </a>
+        <a href="/batch" class="nav-item">
+          <span class="nav-icon">⚡</span>
+          <span class="nav-label">Batch Jobs</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-indicator">
+          <span
+            style="display:inline-block; width:8px; height:8px; background:#10b981; border-radius:50%; margin-right:0.5rem;"></span>
+          <small>System Online</small>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <section class="content-section">
+        <header class="section-header">
+          <!-- Dynamic Page Title based on logic or block could go here, but strict header first -->
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div>
+              <h2>ChessGuard V2</h2>
+              <p class="subtitle">Advanced Fair Play Analysis</p>
+            </div>
+            <div class="search-input-wrapper" style="width: 300px;">
+              <input type="text" placeholder="🔍 Search Player..."
+                onkeydown="if(event.key==='Enter'){window.location.href='/player/'+this.value}"
+                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white;" />
+            </div>
+          </div>
+        </header>
+
+        <!-- Content Block -->
+        {% block content %}{% endblock %}
+
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

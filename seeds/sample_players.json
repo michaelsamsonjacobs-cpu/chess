@@ -1,0 +1,23 @@
+[
+  {
+    "id": "player-001",
+    "name": "Magnus Carlsen",
+    "federation": "NOR",
+    "title": "GM",
+    "rating": 2852
+  },
+  {
+    "id": "player-002",
+    "name": "Viswanathan Anand",
+    "federation": "IND",
+    "title": "GM",
+    "rating": 2753
+  },
+  {
+    "id": "player-003",
+    "name": "Hou Yifan",
+    "federation": "CHN",
+    "title": "GM",
+    "rating": 2650
+  }
+]

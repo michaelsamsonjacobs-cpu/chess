@@ -1,0 +1,25 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - STOCKFISH_PATH=/usr/games/stockfish
+      - DATABASE_URL=sqlite:///./chessguard.db
+      - CHESSGUARD_API_KEYS=director|Chief Arbiter:director-key,monitor|Floor Arbiter:monitor-key,arbiter|Deputy Arbiter:arbiter-key
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+    restart: unless-stopped

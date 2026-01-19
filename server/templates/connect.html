@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card" style="max-width: 600px; margin: 0 auto; margin-bottom: 2rem;">
+    <div class="card-header" style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="justify-content: center;">🔗 Link Lichess Account</h2>
+        <p class="text-muted">Sync your own games for automatic analysis</p>
+    </div>
+
+    <!-- Connection Form -->
+    <form method="post" action="/connect" id="connect-form">
+        <div class="field">
+            <label for="lichess-username">Lichess Username</label>
+            <input type="text" id="lichess-username" name="username" required placeholder="e.g. MagnusCarlsen"
+                value="{{ user.lichess_username if user else '' }}" />
+        </div>
+        <div class="field">
+            <label for="lichess-token">OAuth / Personal Token</label>
+            <input type="password" id="lichess-token" name="token" placeholder="lip_..."
+                value="{{ user.lichess_token if user else '' }}" />
+            <small>
+                Create a token with 'Read preferences' scope in your <a href="https://lichess.org/account/oauth/app"
+                    target="_blank" style="color: var(--accent-primary);">Lichess Settings</a>.
+            </small>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <button type="submit" style="width: 100%;">
+                {% if user and user.lichess_token %}Update Connection{% else %}Connect Account{% endif %}
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Sync Section (Only visible if connected) -->
+{% if user and user.lichess_token %}
+<div class="card" style="max-width: 600px; margin: 0 auto;">
+    <div class="card-header" style="margin-bottom: 1.5rem;">
+        <h3>🔄 Auto-Sync Games</h3>
+    </div>
+
+    <div class="controls" style="justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <label for="max-games">Max games to sync:</label>
+            <input type="number" id="max-games" min="1" max="50" value="10" style="width: 80px;" />
+        </div>
+        <button id="sync-btn" class="secondary" onclick="triggerSync()">Sync Now</button>
+    </div>
+
+    <div id="sync-status" class="status info" style="display: none; margin-top: 1rem;">
+        Starting sync...
+    </div>
+</div>
+
+<script>
+    async function triggerSync() {
+        const btn = document.getElementById('sync-btn');
+        const status = document.getElementById('sync-status');
+        const max = document.getElementById('max-games').value;
+
+        btn.disabled = true;
+        btn.innerHTML = 'Syncing...';
+        status.style.display = 'block';
+        status.innerText = 'Fetching recent games from Lichess...';
+
+        try {
+            const response = await fetch('/api/sync?username={{ user.lichess_username }}&limit=' + max, { method: 'POST' });
+            const result = await response.json();
+
+            if (response.ok) {
+                status.className = 'status success';
+                status.innerText = `Sync Complete! Imported ${result.imported} games.`;
+            } else {
+                status.className = 'status error';
+                status.innerText = 'Sync Failed: ' + (result.detail || 'Unknown error');
+            }
+        } catch (e) {
+            status.className = 'status error';
+            status.innerText = 'Network Error: ' + e.message;
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = 'Sync Now';
+        }
+    }
+</script>
+{% endif %}
+
+{% endblock %}

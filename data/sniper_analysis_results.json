@@ -1,0 +1,282 @@
+{
+  "abrito99": {
+    "sniper_index": 0.109,
+    "critical_accuracy": 0.6,
+    "normal_accuracy": 0.491,
+    "critical_moves_count": 10,
+    "games_analyzed": 3
+  },
+  "adidahottie": {
+    "sniper_index": 0.489,
+    "critical_accuracy": 0.8,
+    "normal_accuracy": 0.311,
+    "critical_moves_count": 5,
+    "games_analyzed": 3
+  },
+  "aklanion": {
+    "sniper_index": 0.117,
+    "critical_accuracy": 0.5,
+    "normal_accuracy": 0.383,
+    "critical_moves_count": 8,
+    "games_analyzed": 3
+  },
+  "ammarkefi": {
+    "sniper_index": 0.598,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.402,
+    "critical_moves_count": 9,
+    "games_analyzed": 3
+  },
+  "anand-carlsen": {
+    "sniper_index": 0.108,
+    "critical_accuracy": 0.571,
+    "normal_accuracy": 0.463,
+    "critical_moves_count": 7,
+    "games_analyzed": 3
+  },
+  "andreimacovei2000": {
+    "sniper_index": 0,
+    "critical_accuracy": 0,
+    "normal_accuracy": 0,
+    "critical_moves_count": 0,
+    "games_analyzed": 3
+  },
+  "angulo07": {
+    "sniper_index": -1.0,
+    "critical_accuracy": 0,
+    "normal_accuracy": 1.0,
+    "critical_moves_count": 0,
+    "games_analyzed": 3
+  },
+  "arash-tiger": {
+    "sniper_index": 0.568,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.432,
+    "critical_moves_count": 5,
+    "games_analyzed": 3
+  },
+  "arm-tal": {
+    "sniper_index": 0.585,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.415,
+    "critical_moves_count": 1,
+    "games_analyzed": 3
+  },
+  "bablusut": {
+    "sniper_index": 0.57,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.43,
+    "critical_moves_count": 16,
+    "games_analyzed": 3
+  },
+  "belbn": {
+    "sniper_index": 0.479,
+    "critical_accuracy": 0.818,
+    "normal_accuracy": 0.339,
+    "critical_moves_count": 11,
+    "games_analyzed": 3
+  },
+  "bigmak2500": {
+    "sniper_index": 0.512,
+    "critical_accuracy": 0.909,
+    "normal_accuracy": 0.397,
+    "critical_moves_count": 11,
+    "games_analyzed": 3
+  },
+  "brauliocuarta": {
+    "sniper_index": 0.435,
+    "critical_accuracy": 0.88,
+    "normal_accuracy": 0.445,
+    "critical_moves_count": 25,
+    "games_analyzed": 3
+  },
+  "brizuelaronald": {
+    "sniper_index": 0.066,
+    "critical_accuracy": 0.429,
+    "normal_accuracy": 0.362,
+    "critical_moves_count": 7,
+    "games_analyzed": 3
+  },
+  "ctl77": {
+    "sniper_index": 0.232,
+    "critical_accuracy": 0.667,
+    "normal_accuracy": 0.435,
+    "critical_moves_count": 12,
+    "games_analyzed": 3
+  },
+  "cubbiesrule81": {
+    "sniper_index": 0.633,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.367,
+    "critical_moves_count": 5,
+    "games_analyzed": 3
+  },
+  "domdc": {
+    "sniper_index": 0.5,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.5,
+    "critical_moves_count": 5,
+    "games_analyzed": 3
+  },
+  "drholmes13": {
+    "sniper_index": 0.245,
+    "critical_accuracy": 0.692,
+    "normal_accuracy": 0.447,
+    "critical_moves_count": 13,
+    "games_analyzed": 3
+  },
+  "drik": {
+    "sniper_index": 0.33,
+    "critical_accuracy": 0.909,
+    "normal_accuracy": 0.579,
+    "critical_moves_count": 11,
+    "games_analyzed": 3
+  },
+  "e-shaposhnikov": {
+    "sniper_index": 0.529,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.471,
+    "critical_moves_count": 13,
+    "games_analyzed": 3
+  },
+  "pada": {
+    "sniper_index": -0.389,
+    "critical_accuracy": 0.0,
+    "normal_accuracy": 0.389,
+    "critical_moves_count": 3,
+    "games_analyzed": 3
+  },
+  "fisher-human": {
+    "sniper_index": 0.073,
+    "critical_accuracy": 0.5,
+    "normal_accuracy": 0.427,
+    "critical_moves_count": 4,
+    "games_analyzed": 3
+  },
+  "flawless2018": {
+    "sniper_index": 0.404,
+    "critical_accuracy": 0.909,
+    "normal_accuracy": 0.505,
+    "critical_moves_count": 11,
+    "games_analyzed": 3
+  },
+  "imaroundsound": {
+    "sniper_index": 0.246,
+    "critical_accuracy": 0.682,
+    "normal_accuracy": 0.436,
+    "critical_moves_count": 22,
+    "games_analyzed": 3
+  },
+  "janjuha95": {
+    "sniper_index": 0.575,
+    "critical_accuracy": 0.9,
+    "normal_accuracy": 0.325,
+    "critical_moves_count": 10,
+    "games_analyzed": 3
+  },
+  "maximlavrov": {
+    "sniper_index": 0.625,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.375,
+    "critical_moves_count": 2,
+    "games_analyzed": 3
+  },
+  "psicho": {
+    "sniper_index": 0.225,
+    "critical_accuracy": 0.667,
+    "normal_accuracy": 0.442,
+    "critical_moves_count": 12,
+    "games_analyzed": 3
+  },
+  "mikhailtal1705": {
+    "sniper_index": 0.172,
+    "critical_accuracy": 0.684,
+    "normal_accuracy": 0.513,
+    "critical_moves_count": 19,
+    "games_analyzed": 3
+  },
+  "nearestway": {
+    "sniper_index": 0.589,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.411,
+    "critical_moves_count": 6,
+    "games_analyzed": 3
+  },
+  "rookslovechess": {
+    "sniper_index": 0.56,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.44,
+    "critical_moves_count": 1,
+    "games_analyzed": 3
+  },
+  "tablevolleyball": {
+    "sniper_index": 0.605,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.395,
+    "critical_moves_count": 7,
+    "games_analyzed": 3
+  },
+  "tigranlpetrosyan": {
+    "sniper_index": 0.268,
+    "critical_accuracy": 0.583,
+    "normal_accuracy": 0.316,
+    "critical_moves_count": 12,
+    "games_analyzed": 3
+  },
+  "tsakos2731": {
+    "sniper_index": 0.281,
+    "critical_accuracy": 0.818,
+    "normal_accuracy": 0.537,
+    "critical_moves_count": 22,
+    "games_analyzed": 3
+  },
+  "tuyhoaphuyen": {
+    "sniper_index": 0.5,
+    "critical_accuracy": 1.0,
+    "normal_accuracy": 0.5,
+    "critical_moves_count": 3,
+    "games_analyzed": 3
+  },
+  "dan1": {
+    "sniper_index": 0.45,
+    "critical_accuracy": 0.833,
+    "normal_accuracy": 0.383,
+    "critical_moves_count": 6,
+    "games_analyzed": 3
+  },
+  "vgt187": {
+    "sniper_index": -0.667,
+    "critical_accuracy": 0,
+    "normal_accuracy": 0.667,
+    "critical_moves_count": 0,
+    "games_analyzed": 3
+  },
+  "viktormatviishen": {
+    "sniper_index": 0.186,
+    "critical_accuracy": 0.556,
+    "normal_accuracy": 0.37,
+    "critical_moves_count": 9,
+    "games_analyzed": 3
+  },
+  "weiyi1999": {
+    "sniper_index": 0.405,
+    "critical_accuracy": 0.8,
+    "normal_accuracy": 0.395,
+    "critical_moves_count": 15,
+    "games_analyzed": 3
+  },
+  "windopo": {
+    "sniper_index": 0.463,
+    "critical_accuracy": 0.833,
+    "normal_accuracy": 0.37,
+    "critical_moves_count": 6,
+    "games_analyzed": 3
+  },
+  "1999": {
+    "sniper_index": 0.128,
+    "critical_accuracy": 0.538,
+    "normal_accuracy": 0.411,
+    "critical_moves_count": 13,
+    "games_analyzed": 3
+  }
+}

@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="metrics-grid" style="margin-bottom: 2rem;">
+    <div class="metric">
+        <strong>Total Games</strong>
+        <span>{{ stats.total_games }}</span>
+    </div>
+    <div class="metric">
+        <strong>Players Tracked</strong>
+        <span>{{ stats.players_tracked }}</span>
+    </div>
+    <div class="metric">
+        <strong>Flagged</strong>
+        <span style="color: var(--danger);">{{ stats.flagged }}</span>
+    </div>
+    <div class="metric">
+        <strong>Pending</strong>
+        <span style="color: var(--warning);">{{ stats.pending }}</span>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"
+        style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+        <h3 style="margin: 0;">📋 Recently Analyzed Players</h3>
+        <p style="margin: 0.5rem 0 0 0; opacity: 0.7; font-size: 0.875rem;">Click a player to view their full analysis
+            history</p>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Platform</th>
+                    <th>Games</th>
+                    <th>Flagged</th>
+                    <th>Pending</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in players %}
+                <tr>
+                    <td>
+                        <a href="/player/{{ player.username }}"
+                            style="color: var(--accent-primary); text-decoration: none; font-weight: 500;">
+                            {{ player.username }}
+                        </a>
+                    </td>
+                    <td><span class="badge" style="background: rgba(255,255,255,0.05);">{{ player.platform }}</span>
+                    </td>
+                    <td>{{ player.game_count }}</td>
+                    <td>
+                        {% if player.flagged_count > 0 %}
+                        <span class="badge badge-danger">{{ player.flagged_count }}</span>
+                        {% else %}
+                        <span style="opacity: 0.3;">0</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if player.pending_count > 0 %}
+                        <span class="badge badge-warning">{{ player.pending_count }}</span>
+                        {% else %}
+                        <span style="opacity: 0.3;">0</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="/player/{{ player.username }}" class="button secondary"
+                            style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">
+                            View Profile
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not players %}
+                <tr>
+                    <td colspan="6" style="text-align: center; padding: 2rem; opacity: 0.5;">
+                        No players analyzed yet. Use Detective Mode to analyze a player.
+                    </td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card" style="margin-top: 2rem;">
+    <div class="card-header" style="margin-bottom: 1rem;">
+        <h3 style="margin: 0;">🔍 Quick Actions</h3>
+    </div>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="/detective" class="button" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <span>🔍</span> Start Investigation
+        </a>
+        <a href="/analyses" class="button secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <span>♟️</span> View All Games
+        </a>
+        <a href="/cheaters" class="button secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <span>🚷</span> Cheater Database
+        </a>
+    </div>
+</div>
+
+{% endblock %}

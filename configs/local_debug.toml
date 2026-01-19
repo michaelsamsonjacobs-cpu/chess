@@ -1,0 +1,23 @@
+[data]
+path = "data/processed/debug_games.jsonl"
+format = "jsonl"
+features = ["engine_average_centipawn_loss"]
+target = "label"
+positive_label = "suspicious"
+negative_label = "clean"
+drop_unlabeled = false
+
+[split]
+validation_fraction = 0.1
+random_seed = 7
+
+[model]
+type = "threshold"
+direction = "lower-is-positive"
+optimisation_metric = "f1"
+
+[artifacts]
+output_dir = "data/artifacts/debug"
+model_filename = "threshold_debug.json"
+metrics_filename = "metrics_debug.json"
+split_filename = "split_debug.json"

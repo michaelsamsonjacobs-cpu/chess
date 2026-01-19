@@ -1,0 +1,233 @@
+{
+  "abrito99": {
+    "total_games": 921,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 892
+  },
+  "adidahottie": {
+    "total_games": 100,
+    "max_window_density": 0.1,
+    "max_window_high_acc_count": 2,
+    "is_suspicious": false,
+    "window_start_index": 13
+  },
+  "aklanion": {
+    "total_games": 1748,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 1727
+  },
+  "anand-carlsen": {
+    "total_games": 495,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 101
+  },
+  "andreimacovei2000": {
+    "total_games": 1868,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "angulo07": {
+    "total_games": 118,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "arash-tiger": {
+    "total_games": 580,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "arm-tal": {
+    "total_games": 30,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "bablusut": {
+    "total_games": 17,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "belbn": {
+    "total_games": 5,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "bigmak2500": {
+    "total_games": 721,
+    "max_window_density": 0.1,
+    "max_window_high_acc_count": 2,
+    "is_suspicious": false,
+    "window_start_index": 640
+  },
+  "brauliocuarta": {
+    "total_games": 2254,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "brizuelaronald": {
+    "total_games": 1110,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "ctl77": {
+    "total_games": 100,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "cubbiesrule81": {
+    "total_games": 100,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "domdc": {
+    "total_games": 100,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 56
+  },
+  "drholmes13": {
+    "total_games": 804,
+    "max_window_density": 0.2,
+    "max_window_high_acc_count": 4,
+    "is_suspicious": false,
+    "window_start_index": 782
+  },
+  "drik": {
+    "total_games": 100,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 78
+  },
+  "e-shaposhnikov": {
+    "total_games": 1518,
+    "max_window_density": 0.15,
+    "max_window_high_acc_count": 3,
+    "is_suspicious": false,
+    "window_start_index": 1
+  },
+  "pada": {
+    "total_games": 423,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "fisher-human": {
+    "total_games": 5321,
+    "max_window_density": 0.1,
+    "max_window_high_acc_count": 2,
+    "is_suspicious": false,
+    "window_start_index": 5293
+  },
+  "flawless2018": {
+    "total_games": 1835,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 749
+  },
+  "maximlavrov": {
+    "total_games": 210,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 183
+  },
+  "psicho": {
+    "total_games": 90,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "nearestway": {
+    "total_games": 879,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "tablevolleyball": {
+    "total_games": 402,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "tigranlpetrosyan": {
+    "total_games": 948,
+    "max_window_density": 0.4,
+    "max_window_high_acc_count": 8,
+    "is_suspicious": true,
+    "window_start_index": 900
+  },
+  "tsakos2731": {
+    "total_games": 10,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "dan1": {
+    "total_games": 1462,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "vgt187": {
+    "total_games": 100,
+    "max_window_density": 0.1,
+    "max_window_high_acc_count": 2,
+    "is_suspicious": false,
+    "window_start_index": 71
+  },
+  "viktormatviishen": {
+    "total_games": 588,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  },
+  "weiyi1999": {
+    "total_games": 1989,
+    "max_window_density": 0.05,
+    "max_window_high_acc_count": 1,
+    "is_suspicious": false,
+    "window_start_index": 1954
+  },
+  "1999": {
+    "total_games": 93,
+    "max_window_density": 0.0,
+    "max_window_high_acc_count": 0,
+    "is_suspicious": false,
+    "window_start_index": -1
+  }
+}

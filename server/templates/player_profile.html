@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    <div class="card-header"
+        style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h2 style="margin: 0; font-size: 2rem; border: none;">{{ username }}</h2>
+                <div style="margin-top: 0.5rem; color: var(--text-muted);">
+                    Platform: <strong style="color: white;">{{ platform|default('All') }}</strong> • Tracked Games:
+                    <strong style="color: white;">{{ games|length }}</strong>
+                </div>
+            </div>
+
+            <!-- Report Download Button -->
+            <a class="button" href="/api/reports/generate/{{ username }}">
+                <span style="margin-right:0.5rem">📄</span>Download Evidence Report
+            </a>
+        </div>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="filters-container"
+        style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid var(--border-subtle);">
+        <form method="get" style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-end;">
+            <div class="field" style="flex: 1; min-width: 200px;">
+                <label for="opponent-filter"
+                    style="display: block; margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.7;">Filter by
+                    Opponent</label>
+                <select id="opponent-filter" name="opponent" onchange="this.form.submit()"
+                    style="width: 100%; padding: 0.5rem; border-radius: 6px; background: var(--bg-primary); color: white; border: 1px solid var(--border-default);">
+                    <option value="">All Opponents</option>
+                    {% for opp in opponents %}
+                    <option value="{{ opp }}" {% if current_opponent==opp %}selected{% endif %}>{{ opp }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="field" style="flex: 1; min-width: 200px;">
+                <label for="status-filter"
+                    style="display: block; margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.7;">Filter by
+                    Result</label>
+                <select id="status-filter" name="status" onchange="this.form.submit()"
+                    style="width: 100%; padding: 0.5rem; border-radius: 6px; background: var(--bg-primary); color: white; border: 1px solid var(--border-default);">
+                    <option value="">All Results</option>
+                    {% for status in status_options %}
+                    <option value="{{ status }}" {% if current_status==status %}selected{% endif %}>{{ status|upper }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% if current_opponent or current_status %}
+            <div>
+                <a href="/player/{{ username }}" class="button secondary" style="padding: 0.5rem 1rem;">
+                    Clear Filters
+                </a>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+
+    <h3>Recent Games</h3>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Matchup</th>
+                    <th>Result</th>
+                    <th>Suspicion Score</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for game in games %}
+                <tr>
+                    <td>{{ game.played_at.strftime('%Y-%m-%d') if game.played_at else '-' }}</td>
+                    <td>
+                        <span {% if game.white_player.username==username
+                            %}style="font-weight:bold; color: var(--accent-primary);" {% endif %}>{{
+                            game.white_player.username }}</span>
+                        <span style="opacity: 0.5; margin: 0 0.25rem;">vs</span>
+                        <span {% if game.black_player.username==username
+                            %}style="font-weight:bold; color: var(--accent-primary);" {% endif %}>{{
+                            game.black_player.username }}</span>
+                    </td>
+                    <td><span class="badge" style="background: rgba(255,255,255,0.05);">{{ game.result }}</span></td>
+                    <td>
+                        {% if game.investigation and game.investigation.details %}
+                        {% set score = game.investigation.details.get('suspicion_score', 0) %}
+                        {% if score > 0.8 %}
+                        <strong style="color: var(--danger);">{{ "%.2f"|format(score) }}</strong>
+                        {% elif score > 0.5 %}
+                        <strong style="color: var(--warning);">{{ "%.2f"|format(score) }}</strong>
+                        {% else %}
+                        <span style="opacity: 0.5;">{{ "%.2f"|format(score) }}</span>
+                        {% endif %}
+                        {% else %}
+                        <span style="opacity: 0.3;">-</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if game.analysis_status.value == 'flagged' %}
+                        <span class="badge badge-danger">FLAGGED</span>
+                        {% elif game.analysis_status.value == 'completed' %}
+                        <span class="badge badge-success">CLEAN</span>
+                        {% else %}
+                        <span class="badge">{{ game.analysis_status.value }}</span>
+                        {% endif %}
+                    </td>
+                    <td><a href="/analyses/{{ game.id }}" class="button secondary"
+                            style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">View Analysis</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

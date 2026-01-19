@@ -1,0 +1,137 @@
+/* ============================================
+   Agent Console Styles
+   ============================================ */
+
+.platform-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.platform-badge.lichess {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.platform-badge.chesscom {
+    background: rgba(108, 169, 59, 0.2);
+    color: #85c743;
+    border: 1px solid rgba(133, 199, 67, 0.3);
+}
+
+.risk-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.risk-badge.critical {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.1);
+}
+
+.risk-badge.high {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.risk-badge.moderate {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+
+.risk-badge.low {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-dot.completed {
+    background: #10b981;
+    box-shadow: 0 0 5px #10b981;
+}
+
+.status-dot.running {
+    background: #3b82f6;
+    animation: pulse 1s infinite;
+}
+
+.status-dot.failed {
+    background: #ef4444;
+}
+
+.status-dot.pending {
+    background: #6b7280;
+}
+
+.small-btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    min-height: auto;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--bg-card);
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid var(--border-highlight);
+    border-radius: var(--radius-lg);
+    width: 80%;
+    max-width: 800px;
+    box-shadow: var(--shadow-lg);
+    animation: slideDown 0.3s ease;
+}
+
+.close-modal {
+    color: var(--text-muted);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: var(--text-primary);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

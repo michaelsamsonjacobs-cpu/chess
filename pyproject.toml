@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=66", "wheel"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chessguard"
+version = "0.1.0"
+description = "Detection and monitoring utilities for ChessGuard. Modular toolkit for evaluating chess games for potential cheating."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "ChessGuard Team" },
+  { name = "ChessGuard Maintainers" },
+  { name = "ChessGuard Contributors" }
+]
+license = { text = "MIT" }
+keywords = ["chess", "anti-cheating", "engine", "analysis"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  # Core libs
+  "python-chess>=1.999",
+  "numpy>=1.25.0",
+  "scipy>=1.9",
+  "joblib>=1.2",
+  "pyyaml>=6.0",
+  "pandas>=2.0",
+  "requests>=2.31",
+
+  # Observability / runtime
+  "structlog>=23.1.0",
+  "prometheus-client>=0.18.0",
+
+  # Visualization
+  "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+# Dev tools (merged)
+dev = [
+  "black>=23.0",
+  "pytest>=7.4.0",
+  "mypy>=1.6.0",
+  "ruff>=0.3",
+]
+# Models / orchestration (from main)
+models = [
+  "torch>=2.0.0",
+  "lightgbm>=4.0.0",
+]
+orchestration = [
+  "prefect>=2.10",
+  "rich>=13.3",
+]
+
+[project.scripts]
+chessguard = "chessguard.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src", "eval"]
+strict = true
+warn_unused_configs = true
+warn_return_any = true
+implicit_reexport = false
+
+[[tool.mypy.overrides]]
+module = ["structlog.*", "prometheus_client.*", "matplotlib.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "Q", "UP", "S"]
+ignore = ["S101"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["chessguard"]

@@ -1,39 +1,49 @@
-# Large backup files
-*.tar.gz
-ChessGuard_Backup_*.tar.gz
+# Python virtual environments
+.venv/
 
-# Videos
-*.mp4
-*.webm
-*.avi
-
-# Database files
-*.db
-*.db-shm
-*.db-wal
-
-# Python
+# Byte-compiled / cache files
 __pycache__/
 *.py[cod]
-*$py.class
-.venv/
-venv/
+*.pyc
+*.pyo
+
+# Packaging
+.eggs/
+*.egg-info/
+
+# Environment variables
 .env
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-logs/
+# Logs and test cache
+logs/*.log
 *.log
+.pytest_cache/
 
-# Node
-node_modules/
+# Notebook checkpoints
+.ipynb_checkpoints/
 
-# Models (too large for Git)
-# models/*.pkl
+# Data directories created at runtime
+/data/raw/
+/data/interim/
+/data/processed/
+/data/artifacts/
+
+# App databases (auth/server)
+auth/data/*.db
+auth/test_auth.db
+server/data/*.db
+server/test_server.db
+data/*.db
+data/cheater_games/
+
+
+# Frontend build artifacts
+client/node_modules/
+client/dist/
+web/node_modules/
+
+# OS / editor junk
+.DS_Store
+
+
+*.mp4

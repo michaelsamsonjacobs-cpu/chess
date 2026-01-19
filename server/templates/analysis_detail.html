@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+  <div class="card-header"
+    style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <h2 style="margin: 0; border: none;">
+          <a href="/player/{{ game.white_player.username }}" style="color: white; text-decoration: none;">{{
+            game.white_player.username }}</a>
+          <span style="opacity: 0.5; margin: 0 0.5rem;">vs</span>
+          <a href="/player/{{ game.black_player.username }}" style="color: white; text-decoration: none;">{{
+            game.black_player.username }}</a>
+        </h2>
+        <div style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.875rem;">
+          {{ game.played_at.strftime('%Y-%m-%d %H:%M') if game.played_at else 'Unknown Date' }} • {{ game.result }}
+          • <a href="https://lichess.org/{{ game.lichess_id }}" target="_blank"
+            style="color: var(--accent-primary);">View on Lichess ↗</a>
+        </div>
+      </div>
+      <div>
+        <a href="/api/reports/generate/{{ game.white_player.username }}" class="button secondary">📄 Report: {{
+          game.white_player.username }}</a>
+        <a href="/api/reports/generate/{{ game.black_player.username }}" class="button secondary"
+          style="margin-left: 0.5rem;">📄 Report: {{ game.black_player.username }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric">
+      <strong>Moves</strong>
+      <span>{{ game.evaluations|length }}</span>
+    </div>
+    {% if game.investigation and game.investigation.details %}
+    {% set d = game.investigation.details %}
+    <div class="metric">
+      <strong>Suspicion Score</strong>
+      {% if d.suspicion_score > 0.8 %}
+      <span style="color: var(--danger);">{{ "%.2f"|format(d.suspicion_score) }}</span>
+      {% else %}
+      <span>{{ "%.2f"|format(d.suspicion_score) }}</span>
+      {% endif %}
+    </div>
+    <div class="metric">
+      <strong>Sniper Gap</strong>
+      <span>{{ "%.1f"|format(d.critical_vs_normal_gap * 100) }}%</span>
+    </div>
+    <div class="metric">
+      <strong>Engine Match</strong>
+      <span>{{ "%.1f"|format(d.engine_agreement * 100) }}%</span>
+    </div>
+    {% endif %}
+  </div>
+
+  <div style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+
+    <!-- Column 1: V2 Signals -->
+    <div>
+      <h3 style="border-bottom: 1px solid var(--border-default); padding-bottom: 0.5rem; margin-bottom: 1rem;">🕵️ V2
+        Analysis Signals</h3>
+
+      {% if game.investigation and game.investigation.details %}
+      {% set d = game.investigation.details %}
+
+      <!-- Sniper Chart -->
+      <div
+        style="background: var(--bg-elevated); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <h4 style="margin-top:0; font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted);">🔫 Sniper
+          Index</h4>
+
+        {% set crit_acc = (d.critical_moves_correct / d.critical_moves_total * 100) if d.critical_moves_total else 0 %}
+        {% set norm_acc = (d.normal_moves_correct / d.normal_moves_total * 100) if d.normal_moves_total else 0 %}
+
+        <div style="margin-top: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.25rem;">
+            <span>Critical Moves ({{ d.critical_moves_correct }}/{{ d.critical_moves_total }})</span>
+            <span style="color: var(--danger);">{{ "%.1f"|format(crit_acc) }}%</span>
+          </div>
+          <div style="background: rgba(255,255,255,0.1); height: 8px; width: 100%; border-radius: 4px;">
+            <div style="background: var(--danger); height: 100%; width: {{ crit_acc }}%; border-radius: 4px;"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.25rem;">
+            <span>Normal Moves ({{ d.normal_moves_correct }}/{{ d.normal_moves_total }})</span>
+            <span style="color: var(--info);">{{ "%.1f"|format(norm_acc) }}%</span>
+          </div>
+          <div style="background: rgba(255,255,255,0.1); height: 8px; width: 100%; border-radius: 4px;">
+            <div style="background: var(--info); height: 100%; width: {{ norm_acc }}%; border-radius: 4px;"></div>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+          <small>Accuracy Gap</small>
+          <div>
+            <strong>{{ (crit_acc - norm_acc)|round(1) }}%</strong>
+            {% if (crit_acc - norm_acc) > 35 %}
+            <span class="badge badge-danger" style="margin-left: 0.5rem;">SUSPICIOUS</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Flags -->
+      <div style="margin-top: 1.5rem;">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">🚩
+          Detection Flags</h4>
+        {% if d.flags %}
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          {% for flag in d.flags %}
+          <div
+            style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); padding: 0.75rem; border-radius: var(--radius-sm); color: #fca5a5; font-size: 0.9rem;">
+            {{ flag }}
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div style="color: var(--success); font-style: italic;">No red flags detected.</div>
+        {% endif %}
+      </div>
+
+      {% else %}
+      <p class="text-muted">No V2 metrics recorded yet.</p>
+      {% endif %}
+    </div>
+
+    <!-- Column 2: Move List -->
+    <div>
+      <h3 style="border-bottom: 1px solid var(--border-default); padding-bottom: 0.5rem; margin-bottom: 1rem;">♟️ Move
+        Analysis</h3>
+      <div class="table-wrapper" style="max-height: 500px; overflow-y: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Ply</th>
+              <th>Move</th>
+              <th>Acc</th>
+              <th>Eval</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for eval in game.evaluations|sort(attribute='move_number') %}
+            <tr {% if eval.flagged %}style="background: rgba(239, 68, 68, 0.1);" {% endif %}>
+              <td>{{ eval.move_number }}</td>
+              <td style="font-family: monospace;">{{ eval.best_move }}</td>
+              <!-- Assuming best_move is stored, actual move is in metadata but we display safe fallback -->
+              <td>
+                {% if eval.accuracy %}
+                <span class="{{ 'text-success' if eval.accuracy > 0.8 else 'text-warning' }}">{{
+                  "%.2f"|format(eval.accuracy) }}</span>
+                {% else %}
+                -
+                {% endif %}
+              </td>
+              <td>{{ eval.evaluation_cp }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

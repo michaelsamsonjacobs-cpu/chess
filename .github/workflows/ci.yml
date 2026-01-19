@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build-test-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r auth/requirements.txt -r server/requirements.txt pytest pip-audit
+
+      - name: Run unit tests
+        run: |
+          pytest auth/tests server/tests
+        env:
+          AUTH_JWT_SECRET: test-secret
+          AUTH_DATABASE_URL: sqlite:///./test_auth.db
+          SERVER_JWT_SECRET: test-secret
+          SERVER_DATABASE_URL: sqlite:///./test_server.db
+
+      - name: Audit Python dependencies
+        run: |
+          pip-audit -r auth/requirements.txt
+          pip-audit -r server/requirements.txt
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install front-end dependencies
+        working-directory: client
+        run: npm install
+
+      - name: Audit front-end dependencies
+        working-directory: client
+        run: npm audit --audit-level=moderate

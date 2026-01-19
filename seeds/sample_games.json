@@ -1,0 +1,20 @@
+[
+  {
+    "id": "game-20230101-001",
+    "white_player_id": "player-001",
+    "black_player_id": "player-002",
+    "result": "1-0",
+    "event": "World Championship",
+    "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5"],
+    "played_at": "2023-01-01T12:00:00Z"
+  },
+  {
+    "id": "game-20230102-002",
+    "white_player_id": "player-003",
+    "black_player_id": "player-001",
+    "result": "0-1",
+    "event": "Grand Prix",
+    "moves": ["d4", "Nf6", "c4", "g6", "Nc3"],
+    "played_at": "2023-01-02T15:30:00Z"
+  }
+]

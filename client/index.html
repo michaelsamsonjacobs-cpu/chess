@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChessGuard Portal</title>
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>ChessGuard</h1>
+        <p class="tagline">Secure authentication and chess insights for tournament organizers.</p>
+      </header>
+
+      <section class="panel" id="config-panel">
+        <h2>Service Configuration</h2>
+        <p>
+          Update these URLs to match your deployment environment. TLS endpoints are recommended
+          (e.g. <code>https://auth.example.com</code>).
+        </p>
+        <div class="field">
+          <label for="auth-url">Authentication Service URL</label>
+          <input id="auth-url" type="url" placeholder="https://localhost:8001" />
+        </div>
+        <div class="field">
+          <label for="server-url">Backend Service URL</label>
+          <input id="server-url" type="url" placeholder="https://localhost:8000" />
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Register</h2>
+        <form id="register-form">
+          <div class="field">
+            <label for="register-email">Email</label>
+            <input id="register-email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="register-name">Full name</label>
+            <input id="register-name" type="text" />
+          </div>
+          <div class="field">
+            <label for="register-password">Password</label>
+            <input id="register-password" type="password" required minlength="12" />
+          </div>
+          <button type="submit">Create account</button>
+        </form>
+        <div class="message" id="register-message"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input id="login-email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required />
+          </div>
+          <button type="submit">Sign in</button>
+        </form>
+        <div class="message" id="login-message"></div>
+      </section>
+
+      <section class="panel" id="profile-panel">
+        <h2>Profile</h2>
+        <form id="profile-form">
+          <div class="field">
+            <label for="profile-display">Display name</label>
+            <input id="profile-display" type="text" />
+          </div>
+          <div class="field">
+            <label for="profile-bio">Bio</label>
+            <textarea id="profile-bio" rows="3"></textarea>
+          </div>
+          <div class="field">
+            <label for="profile-rating">Rating</label>
+            <input id="profile-rating" type="number" min="800" max="3000" />
+          </div>
+          <button type="submit">Save profile</button>
+        </form>
+        <div class="message" id="profile-message"></div>
+      </section>
+
+      <section class="panel" id="games-panel">
+        <h2>Recorded games</h2>
+        <form id="game-form">
+          <div class="field">
+            <label for="game-opponent">Opponent</label>
+            <input id="game-opponent" type="text" required />
+          </div>
+          <div class="field">
+            <label for="game-result">Result</label>
+            <select id="game-result">
+              <option value="win">Win</option>
+              <option value="loss">Loss</option>
+              <option value="draw">Draw</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="game-moves">Moves (PGN snippet)</label>
+            <textarea id="game-moves" rows="2"></textarea>
+          </div>
+          <button type="submit">Record game</button>
+        </form>
+        <ul id="games-list" class="games-list"></ul>
+      </section>
+    </main>
+
+    <script src="scripts/app.js" type="module"></script>
+  </body>
+</html>

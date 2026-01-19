@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card" style="max-width: 600px; margin: 0 auto;">
+    <div class="card-header" style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="justify-content: center;">🔍 Detective Mode</h2>
+        <p class="text-muted">Audit any player from Lichess or Chess.com</p>
+    </div>
+
+    <form method="get" action="/detective/search" id="audit-form">
+        <div class="field">
+            <label for="platform">Platform</label>
+            <select id="platform" name="platform">
+                <option value="lichess">Lichess</option>
+                <option value="chesscom">Chess.com</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="e.g. Hikaru" autocomplete="off" />
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <button type="submit" style="width: 100%;">Start Investigation</button>
+        </div>
+    </form>
+
+    <div style="margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem;">Recent
+            Investigations</h4>
+        <div class="metrics-grid">
+            {% for recent in recent_searches %}
+            <a href="/player/{{ recent }}" class="metric"
+                style="text-decoration: none; text-align: center; transition: background 0.2s;">
+                <span style="font-size: 1rem;">{{ recent }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simple script to handle 'Search' -> Redirect to Player Profile
+    document.getElementById('audit-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const username = document.getElementById('username').value;
+        // We redirect to the player profile which triggers lookup/display
+        // In a real 'Detective Mode', this might trigger a background crawl first.
+        // For now, we assume if they exist in DB, we show them. If not, the profile page will 404.
+        // Ideally, we'd have a 'Check & Import' flow.
+        window.location.href = '/player/' + username;
+    });
+</script>
+
+{% endblock %}

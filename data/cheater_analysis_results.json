@@ -1,0 +1,1390 @@
+{
+  "timestamp": "2025-12-20T16:40:51.716333",
+  "total_players": 24,
+  "players": {
+    "e-shaposhnikov": {
+      "title": "GM",
+      "platform": "chesscom",
+      "name": "Evgeny Shaposhnikov",
+      "games_count": 1518,
+      "analysis": {
+        "total_games": 1518,
+        "time_controls": {
+          "blitz": 662,
+          "bullet": 832,
+          "rapid": 24
+        },
+        "results": {
+          "wins": 748,
+          "losses": 766,
+          "draws": 4
+        },
+        "accuracy_data": [
+          98.79,
+          95.56,
+          76.99,
+          93.66,
+          90.04,
+          95.91,
+          96.14,
+          93.23,
+          86.02,
+          98.82,
+          74.03,
+          97.7,
+          78.6,
+          97.9,
+          77.97,
+          92.25,
+          92.57,
+          90.7,
+          81.59,
+          81.09,
+          95.84,
+          86.87,
+          74.47,
+          78.18,
+          87.62,
+          67.37,
+          65.47,
+          84.44,
+          96.85,
+          95.5,
+          95.74,
+          97.03,
+          29.04,
+          29.15,
+          96.79,
+          85.47,
+          98.78,
+          83.43,
+          29.22,
+          80.67,
+          45.64,
+          97.11,
+          97.35,
+          99.53,
+          94.31,
+          81.29,
+          74.81,
+          99.23,
+          33.86,
+          78.92,
+          91.21,
+          90.77
+        ],
+        "rating_range": {
+          "min": 955,
+          "max": 3305
+        },
+        "openings": {},
+        "win_rate": 49.3,
+        "avg_accuracy": 83.3,
+        "max_accuracy": 99.53,
+        "high_accuracy_games": 18
+      }
+    },
+    "tigranlpetrosyan": {
+      "title": "GM",
+      "platform": "chesscom",
+      "name": "Tigran Petrosian",
+      "games_count": 948,
+      "analysis": {
+        "total_games": 948,
+        "time_controls": {
+          "blitz": 697,
+          "bullet": 227,
+          "rapid": 24
+        },
+        "results": {
+          "wins": 462,
+          "losses": 480,
+          "draws": 6
+        },
+        "accuracy_data": [
+          83.3,
+          97.8,
+          83.04,
+          79.02,
+          90.29,
+          97.7,
+          97.3,
+          91.44,
+          91.06,
+          88.38,
+          94.96,
+          96.38,
+          87.71,
+          33.48,
+          99.01,
+          86.84,
+          70.84,
+          91.14,
+          90.5,
+          98.69,
+          97.71,
+          92.14,
+          78.63,
+          98.99,
+          53.81,
+          41.77,
+          93.11,
+          91.22,
+          98.23,
+          98.15,
+          97.34,
+          98.09,
+          81.26,
+          94.63,
+          97.65,
+          97.33,
+          91.63,
+          96.14,
+          91.17,
+          93.41,
+          87.86,
+          76.7,
+          88.67,
+          90.48,
+          77.16,
+          64.49,
+          69.15215644031338,
+          87.85177382115523,
+          93.40476525510539,
+          96.1425048683615,
+          97.37108154384543,
+          97.37433022946652,
+          86.78156643597899,
+          90.06913190792149,
+          94.58951867900433,
+          75.00441310785938,
+          89.40171471177472,
+          95.9395782713293,
+          91.20312495783215,
+          98.40629827814679,
+          98.51117984591903,
+          82.05592880303358,
+          88.8876142637581,
+          87.73223911682092,
+          98.32714669738037,
+          92.27761622377577,
+          82.73996323266351,
+          99.24534076513449,
+          97.12541514843406,
+          92.27431542794025,
+          50.43385409905198,
+          32.846458442584925,
+          92.22599952284027,
+          87.64999231235917,
+          57.93220976434992,
+          89.60763837581288,
+          97.29304100477805,
+          98.91413233449762,
+          27.960657120510202,
+          58.47031571260174,
+          95.40481470089742,
+          95.95240953701118,
+          80.94245114118945,
+          94.8506945867051,
+          98.19534410097603,
+          95.31656124095417,
+          83.40247203669854,
+          93.98054964259936,
+          93.29040434588018,
+          97.10590878860012,
+          94.96765896349447,
+          96.69738695379614,
+          91.95847252757036,
+          81.44681159956987,
+          93.06989888488759,
+          74.69181937051053,
+          92.1945260444936,
+          72.86180138537891,
+          98.04471570251351,
+          95.91165668578734,
+          87.17882838223478,
+          92.7363567633279,
+          93.30336590135035,
+          94.55730612165026,
+          93.46659216164635,
+          92.13995358765979,
+          93.98750784030874,
+          89.88709770768031,
+          58.67358609351618,
+          93.47893353704949,
+          97.04777037204495,
+          95.8237807028689,
+          93.53312656176517,
+          89.68917076711838,
+          97.74452517838881,
+          49.87688671943022,
+          91.77310589805016,
+          74.93726623884649,
+          95.58605020665257,
+          84.65156539152966,
+          90.2395557647445,
+          90.3466642844847,
+          83.3362265600507,
+          93.96803357316037,
+          92.63981371867482,
+          84.02878086777582,
+          53.51900697790758,
+          77.34743240957411,
+          93.89781724324686,
+          95.73943833284731,
+          70.87355280400813,
+          76.67903352962338,
+          58.546693298878445,
+          75.75586333210558,
+          95.13514347260616,
+          98.27805534227252,
+          98.44518526254782,
+          90.51692390574593,
+          87.27188759707546,
+          69.94518340211977,
+          92.74566816989369,
+          83.2130916904394,
+          93.79204532266458,
+          94.02709043756028,
+          95.97317298480107,
+          82.94812514661166,
+          98.58994187865049,
+          98.20634367961544,
+          66.47064963294775,
+          93.46657007285104,
+          90.12,
+          89.83,
+          96.44,
+          59.41,
+          65.21,
+          88.01,
+          81.04,
+          85.45,
+          98.77,
+          91.77,
+          98.86,
+          98.67,
+          92.12,
+          89.15,
+          90.92,
+          94.45,
+          76.58,
+          70.17,
+          96.47,
+          96.5,
+          81.74,
+          87.27,
+          97.49,
+          96.81,
+          98.47,
+          98.08,
+          96.99,
+          81.54,
+          97.49,
+          97.97,
+          73.05,
+          85.17,
+          97.78,
+          86.46,
+          95.95,
+          97.34,
+          91.79,
+          82.48,
+          97.22,
+          95.38,
+          97.51,
+          88.33,
+          78.03,
+          94.84,
+          79.72,
+          83.38,
+          94.91,
+          85.48,
+          98.17,
+          88.25,
+          84.45,
+          97.31,
+          43.36,
+          99.14,
+          91.93,
+          95.73,
+          93.13,
+          89.49,
+          67.67,
+          91.76,
+          78.96,
+          92.06,
+          50.25,
+          92.91,
+          93.18,
+          93.59,
+          96.33,
+          94.02,
+          96.44,
+          96.31,
+          90.37,
+          88.3,
+          98.97,
+          91.83,
+          98.5,
+          96.62,
+          95.66,
+          98.68,
+          97.61,
+          92.46,
+          95.22,
+          96.96,
+          90.15,
+          89.9,
+          60.68,
+          32.8,
+          76.8,
+          78.81,
+          83.37,
+          88.95,
+          93.91,
+          96.53,
+          79.24,
+          84.17,
+          91.98,
+          92.21,
+          85.7,
+          95.79,
+          89.84,
+          86.47,
+          97.4,
+          89.95,
+          96.04,
+          84.1,
+          56.9,
+          95.31,
+          85.14,
+          69.37,
+          90.14,
+          94.77,
+          88.06,
+          80.4,
+          96.9,
+          99.11,
+          74.44,
+          43.2,
+          59.07,
+          85.97,
+          94.03,
+          89.02,
+          82.74,
+          67.52,
+          100,
+          100,
+          96.63,
+          92.82,
+          98.17,
+          98.7,
+          94.59,
+          81.8,
+          85.27,
+          80.78,
+          76.78,
+          84.14,
+          98.17,
+          60.45,
+          86.65,
+          95.24,
+          51.73,
+          48.02,
+          90.74,
+          72.92,
+          83.45,
+          84.52,
+          95.67,
+          98.91,
+          98.63,
+          93.82,
+          71.93,
+          83.3,
+          95.19,
+          66.82,
+          83.14,
+          96.2,
+          65.88,
+          68.43,
+          96.6,
+          94.95,
+          89.59,
+          93.9,
+          52.45,
+          87.36,
+          73.43,
+          50.08,
+          96.9,
+          92.61,
+          85.15,
+          68.22,
+          92.93,
+          94.22,
+          96.23,
+          97.42,
+          76.81,
+          71.99,
+          90.43,
+          65.6,
+          93.23,
+          64.55,
+          98.15,
+          82.31,
+          90.48,
+          77.53,
+          87.76,
+          75.18,
+          88.4,
+          85.23,
+          81.48,
+          97.43,
+          73.47,
+          92.07,
+          88.73,
+          97.08,
+          91.26,
+          58.32,
+          48.49,
+          93.32,
+          80.46,
+          92.36,
+          52.66,
+          94,
+          89.75,
+          78.93,
+          41.44,
+          76.54,
+          94.36,
+          94.58,
+          94.04,
+          87.33,
+          75.16,
+          80.6,
+          95.33,
+          43.06,
+          62.35,
+          92.92,
+          90.97,
+          94.7,
+          75.48,
+          88.61,
+          95.13,
+          95.4,
+          96.36,
+          97.68,
+          91.4,
+          98.21,
+          79.61,
+          90.49,
+          91.27,
+          94.56,
+          87.24,
+          85.74,
+          98.56,
+          90.87,
+          93.24,
+          98.01,
+          79.05,
+          89.52,
+          96.05,
+          87.98,
+          87.38,
+          80.72,
+          84.2,
+          62.71,
+          98.6,
+          96.27,
+          57.14,
+          88.95,
+          97.85,
+          97.68,
+          93.59,
+          80.55,
+          89.07,
+          82,
+          91.7,
+          60.5,
+          91.22,
+          87.3,
+          85.96,
+          90.37,
+          97.69,
+          98.52,
+          88.44,
+          82.63,
+          83.27,
+          65.63,
+          92.75,
+          87.61,
+          65.76,
+          82.95,
+          85.69,
+          87.15,
+          90.34,
+          86.31,
+          92.77,
+          92.3,
+          87.39,
+          84.07,
+          81.57,
+          92.25,
+          95.19,
+          94.91,
+          85.58,
+          82.99,
+          89.26,
+          96.21,
+          84.68,
+          83.65,
+          90.75,
+          78.9,
+          81.26,
+          92.48,
+          83.5,
+          74.24,
+          76.52,
+          75.57,
+          80.77,
+          78.55,
+          88.41,
+          79.31,
+          89.4,
+          88.5,
+          77.86,
+          86.86,
+          96.78,
+          86.94
+        ],
+        "rating_range": {
+          "min": 2323,
+          "max": 3034
+        },
+        "openings": {},
+        "win_rate": 48.7,
+        "avg_accuracy": 86.3,
+        "max_accuracy": 100,
+        "high_accuracy_games": 123
+      }
+    },
+    "eagle_pada": {
+      "title": "GM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 423,
+      "analysis": {
+        "total_games": 423,
+        "time_controls": {
+          "blitz": 423
+        },
+        "results": {
+          "wins": 208,
+          "losses": 212,
+          "draws": 3
+        },
+        "accuracy_data": [
+          82.39,
+          83.91,
+          90.98,
+          80.58,
+          63.02,
+          59.57,
+          93.38,
+          83.39,
+          74.52,
+          78.42,
+          80.63,
+          84.91
+        ],
+        "rating_range": {
+          "min": 2249,
+          "max": 2861
+        },
+        "openings": {},
+        "win_rate": 49.2,
+        "avg_accuracy": 79.6,
+        "max_accuracy": 93.38,
+        "high_accuracy_games": 0
+      }
+    },
+    "drholmes13": {
+      "title": "IM",
+      "platform": "chesscom",
+      "name": "Armin Juhasz",
+      "games_count": 804,
+      "analysis": {
+        "total_games": 804,
+        "time_controls": {
+          "blitz": 761,
+          "rapid": 43
+        },
+        "results": {
+          "wins": 318,
+          "losses": 482,
+          "draws": 4
+        },
+        "accuracy_data": [
+          83.13,
+          58.82,
+          95.44,
+          88.79,
+          89.67,
+          97.72,
+          98.21,
+          84.6,
+          97.47,
+          87.56
+        ],
+        "rating_range": {
+          "min": 1078,
+          "max": 2784
+        },
+        "openings": {},
+        "win_rate": 39.6,
+        "avg_accuracy": 88.1,
+        "max_accuracy": 98.21,
+        "high_accuracy_games": 4
+      }
+    },
+    "maximlavrov": {
+      "title": "IM",
+      "platform": "chesscom",
+      "name": "Maxim Lavrov",
+      "games_count": 210,
+      "analysis": {
+        "total_games": 210,
+        "time_controls": {
+          "blitz": 155,
+          "bullet": 55
+        },
+        "results": {
+          "wins": 106,
+          "losses": 103,
+          "draws": 1
+        },
+        "accuracy_data": [
+          97.7,
+          88.92
+        ],
+        "rating_range": {
+          "min": 1463,
+          "max": 2958
+        },
+        "openings": {},
+        "win_rate": 50.5,
+        "avg_accuracy": 93.3,
+        "max_accuracy": 97.7,
+        "high_accuracy_games": 1
+      }
+    },
+    "viktormatviishen": {
+      "title": "IM",
+      "platform": "chesscom",
+      "name": "Viktor Matviishen",
+      "games_count": 588,
+      "analysis": {
+        "total_games": 588,
+        "time_controls": {
+          "blitz": 577,
+          "bullet": 11
+        },
+        "results": {
+          "wins": 276,
+          "losses": 308,
+          "draws": 4
+        },
+        "accuracy_data": [
+          91.54,
+          73.35,
+          88.62,
+          82.13,
+          47.32,
+          78.05,
+          92.97,
+          84.56,
+          85.16,
+          97.93
+        ],
+        "rating_range": {
+          "min": 1704,
+          "max": 2847
+        },
+        "openings": {},
+        "win_rate": 46.9,
+        "avg_accuracy": 82.2,
+        "max_accuracy": 97.93,
+        "high_accuracy_games": 1
+      }
+    },
+    "fisher-human": {
+      "title": "IM",
+      "platform": "chesscom",
+      "name": "Emil Mirzoev",
+      "games_count": 5321,
+      "analysis": {
+        "total_games": 5321,
+        "time_controls": {
+          "bullet": 4255,
+          "blitz": 1065,
+          "daily": 1
+        },
+        "results": {
+          "wins": 2577,
+          "losses": 2708,
+          "draws": 36
+        },
+        "accuracy_data": [
+          58.77,
+          61,
+          69.03,
+          76.37,
+          80.94,
+          89.96,
+          79.27,
+          95.36,
+          89.37,
+          84.76,
+          86.04,
+          97.49
+        ],
+        "rating_range": {
+          "min": 386,
+          "max": 3076
+        },
+        "openings": {},
+        "win_rate": 48.4,
+        "avg_accuracy": 80.7,
+        "max_accuracy": 97.49,
+        "high_accuracy_games": 2
+      }
+    },
+    "andreimacovei2000": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Andrei Macovei",
+      "games_count": 1868,
+      "analysis": {
+        "total_games": 1868,
+        "time_controls": {
+          "blitz": 1823,
+          "rapid": 9,
+          "bullet": 36
+        },
+        "results": {
+          "wins": 944,
+          "losses": 910,
+          "draws": 14
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 714,
+          "max": 2750
+        },
+        "openings": {},
+        "win_rate": 50.5
+      }
+    },
+    "arash-tiger": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Arash Daghli",
+      "games_count": 580,
+      "analysis": {
+        "total_games": 580,
+        "time_controls": {
+          "blitz": 324,
+          "bullet": 256
+        },
+        "results": {
+          "wins": 244,
+          "losses": 329,
+          "draws": 7
+        },
+        "accuracy_data": [
+          83.82,
+          90.18,
+          85.65,
+          88.46
+        ],
+        "rating_range": {
+          "min": 402,
+          "max": 2932
+        },
+        "openings": {},
+        "win_rate": 42.1,
+        "avg_accuracy": 87.0,
+        "max_accuracy": 90.18,
+        "high_accuracy_games": 0
+      }
+    },
+    "brizuelaronald": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Brizuela Ronald",
+      "games_count": 1110,
+      "analysis": {
+        "total_games": 1110,
+        "time_controls": {
+          "bullet": 770,
+          "blitz": 269,
+          "daily": 71
+        },
+        "results": {
+          "wins": 563,
+          "losses": 537,
+          "draws": 10
+        },
+        "accuracy_data": [
+          82.95,
+          90.58,
+          94.81,
+          84.84
+        ],
+        "rating_range": {
+          "min": 645,
+          "max": 2899
+        },
+        "openings": {},
+        "win_rate": 50.7,
+        "avg_accuracy": 88.3,
+        "max_accuracy": 94.81,
+        "high_accuracy_games": 0
+      }
+    },
+    "abrito99": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Ruben Domingo Nunez",
+      "games_count": 921,
+      "analysis": {
+        "total_games": 921,
+        "time_controls": {
+          "blitz": 882,
+          "bullet": 39
+        },
+        "results": {
+          "wins": 477,
+          "losses": 437,
+          "draws": 7
+        },
+        "accuracy_data": [
+          78.75,
+          73.18,
+          89.64,
+          77.29,
+          78.07,
+          84.43,
+          79.69,
+          78.65,
+          85.31,
+          77.06,
+          93.91,
+          98.91,
+          38.64,
+          77.11
+        ],
+        "rating_range": {
+          "min": 1814,
+          "max": 2958
+        },
+        "openings": {},
+        "win_rate": 51.8,
+        "avg_accuracy": 79.3,
+        "max_accuracy": 98.91,
+        "high_accuracy_games": 1
+      }
+    },
+    "vahe_dan1": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Vahe Danielyan",
+      "games_count": 1462,
+      "analysis": {
+        "total_games": 1462,
+        "time_controls": {
+          "blitz": 124,
+          "bullet": 1336,
+          "daily": 2
+        },
+        "results": {
+          "wins": 741,
+          "losses": 716,
+          "draws": 5
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 849,
+          "max": 2919
+        },
+        "openings": {},
+        "win_rate": 50.7
+      }
+    },
+    "arm-tal": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Vahe Danielyan",
+      "games_count": 30,
+      "analysis": {
+        "total_games": 30,
+        "time_controls": {
+          "bullet": 23,
+          "blitz": 7
+        },
+        "results": {
+          "wins": 14,
+          "losses": 16,
+          "draws": 0
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 836,
+          "max": 2730
+        },
+        "openings": {},
+        "win_rate": 46.7
+      }
+    },
+    "xavielhumilde_1999": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Xavier Martinez Pla",
+      "games_count": 93,
+      "analysis": {
+        "total_games": 93,
+        "time_controls": {
+          "blitz": 88,
+          "bullet": 5
+        },
+        "results": {
+          "wins": 51,
+          "losses": 42,
+          "draws": 0
+        },
+        "accuracy_data": [
+          97.34,
+          65.67,
+          92.78,
+          94.1
+        ],
+        "rating_range": {
+          "min": 1554,
+          "max": 2860
+        },
+        "openings": {},
+        "win_rate": 54.8,
+        "avg_accuracy": 87.5,
+        "max_accuracy": 97.34,
+        "high_accuracy_games": 1
+      }
+    },
+    "nearestway": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": "Sergey Kornev",
+      "games_count": 879,
+      "analysis": {
+        "total_games": 879,
+        "time_controls": {
+          "blitz": 847,
+          "bullet": 31,
+          "rapid": 1
+        },
+        "results": {
+          "wins": 444,
+          "losses": 427,
+          "draws": 8
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 1264,
+          "max": 2969
+        },
+        "openings": {},
+        "win_rate": 50.5
+      }
+    },
+    "anand-carlsen": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 495,
+      "analysis": {
+        "total_games": 495,
+        "time_controls": {
+          "rapid": 6,
+          "bullet": 389,
+          "blitz": 88,
+          "daily": 12
+        },
+        "results": {
+          "wins": 247,
+          "losses": 244,
+          "draws": 4
+        },
+        "accuracy_data": [
+          85.41,
+          78.66,
+          97.02,
+          88.73,
+          93.33,
+          47.64,
+          91.21,
+          75.04,
+          92.63,
+          87.49,
+          55.13,
+          69.17,
+          84.06,
+          39.87,
+          27.42,
+          95.92,
+          34.71,
+          52.22,
+          97.28,
+          30.9,
+          65.71,
+          70.84,
+          96.98,
+          77.69,
+          86.24,
+          87.75,
+          17.78,
+          5.03,
+          94.2,
+          98.32,
+          90.39,
+          92.66,
+          96.31,
+          95.69,
+          89.41,
+          81.94,
+          79.52,
+          84.31,
+          44.65,
+          87.58,
+          98.66,
+          99.09,
+          85.46,
+          78.68,
+          94.57,
+          95.16,
+          90.65,
+          85.05,
+          83.24,
+          85.37,
+          77.16,
+          72.24,
+          72.88,
+          87.31,
+          98.66,
+          85.98,
+          95.11,
+          54.47,
+          52.56,
+          55.04,
+          25.68,
+          22.28,
+          42.04,
+          76.65,
+          88.4,
+          75.71,
+          51.76,
+          88.31,
+          88.27,
+          82.1,
+          62.23,
+          92.48,
+          77.79,
+          66.39,
+          74.27,
+          54.65,
+          80.73,
+          92.7,
+          74.88,
+          74.1,
+          72.53,
+          100,
+          82.91,
+          86.3,
+          81.82,
+          69.98,
+          76.87,
+          94.37,
+          80.97,
+          86.43
+        ],
+        "rating_range": {
+          "min": 924,
+          "max": 2923
+        },
+        "openings": {},
+        "win_rate": 49.9,
+        "avg_accuracy": 76.0,
+        "max_accuracy": 100,
+        "high_accuracy_games": 13
+      }
+    },
+    "tsakos2731": {
+      "title": "FM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 10,
+      "analysis": {
+        "total_games": 10,
+        "time_controls": {
+          "blitz": 10
+        },
+        "results": {
+          "wins": 2,
+          "losses": 8,
+          "draws": 0
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 2158,
+          "max": 2758
+        },
+        "openings": {},
+        "win_rate": 20.0
+      }
+    },
+    "aklanion": {
+      "title": "CM",
+      "platform": "chesscom",
+      "name": "Jurij Khalakhan",
+      "games_count": 1748,
+      "analysis": {
+        "total_games": 1748,
+        "time_controls": {
+          "bullet": 1614,
+          "blitz": 134
+        },
+        "results": {
+          "wins": 828,
+          "losses": 909,
+          "draws": 11
+        },
+        "accuracy_data": [
+          86.02,
+          95.59,
+          80.19,
+          85.62,
+          81.87,
+          76.24,
+          96.4,
+          90.3
+        ],
+        "rating_range": {
+          "min": 1283,
+          "max": 2966
+        },
+        "openings": {},
+        "win_rate": 47.4,
+        "avg_accuracy": 86.5,
+        "max_accuracy": 96.4,
+        "high_accuracy_games": 2
+      }
+    },
+    "tablevolleyball": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": "Aleksandrs Jazdanovs",
+      "games_count": 402,
+      "analysis": {
+        "total_games": 402,
+        "time_controls": {
+          "blitz": 363,
+          "bullet": 39
+        },
+        "results": {
+          "wins": 207,
+          "losses": 193,
+          "draws": 2
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 1515,
+          "max": 2557
+        },
+        "openings": {},
+        "win_rate": 51.5
+      }
+    },
+    "angulo07": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": "Oscar Angulo",
+      "games_count": 118,
+      "analysis": {
+        "total_games": 118,
+        "time_controls": {
+          "daily": 59,
+          "bullet": 3,
+          "blitz": 56
+        },
+        "results": {
+          "wins": 54,
+          "losses": 62,
+          "draws": 2
+        },
+        "accuracy_data": [],
+        "rating_range": {
+          "min": 1048,
+          "max": 2694
+        },
+        "openings": {},
+        "win_rate": 45.8
+      }
+    },
+    "flawless2018": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 1835,
+      "analysis": {
+        "total_games": 1835,
+        "time_controls": {
+          "blitz": 1271,
+          "bullet": 564
+        },
+        "results": {
+          "wins": 906,
+          "losses": 917,
+          "draws": 12
+        },
+        "accuracy_data": [
+          95.15,
+          98.05,
+          69.54,
+          75.91,
+          80.92,
+          70.83,
+          89.64,
+          77.29,
+          80.65,
+          93.21
+        ],
+        "rating_range": {
+          "min": 1715,
+          "max": 2856
+        },
+        "openings": {},
+        "win_rate": 49.4,
+        "avg_accuracy": 83.1,
+        "max_accuracy": 98.05,
+        "high_accuracy_games": 2
+      }
+    },
+    "bigmak2500": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 721,
+      "analysis": {
+        "total_games": 721,
+        "time_controls": {
+          "blitz": 721
+        },
+        "results": {
+          "wins": 357,
+          "losses": 363,
+          "draws": 1
+        },
+        "accuracy_data": [
+          78.38,
+          86.18,
+          78.5,
+          77,
+          96.11,
+          85.31,
+          99.09,
+          91.8,
+          99.46,
+          49.77,
+          92.49,
+          98.83
+        ],
+        "rating_range": {
+          "min": 1799,
+          "max": 2801
+        },
+        "openings": {},
+        "win_rate": 49.5,
+        "avg_accuracy": 86.1,
+        "max_accuracy": 99.46,
+        "high_accuracy_games": 4
+      }
+    },
+    "brauliocuarta": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 2254,
+      "analysis": {
+        "total_games": 2254,
+        "time_controls": {
+          "blitz": 2240,
+          "daily": 14
+        },
+        "results": {
+          "wins": 1147,
+          "losses": 1101,
+          "draws": 6
+        },
+        "accuracy_data": [
+          97.99,
+          60.81,
+          96.29,
+          90.04,
+          84.49,
+          86.26
+        ],
+        "rating_range": {
+          "min": 1785,
+          "max": 2550
+        },
+        "openings": {},
+        "win_rate": 50.9,
+        "avg_accuracy": 86.0,
+        "max_accuracy": 97.99,
+        "high_accuracy_games": 2
+      }
+    },
+    "weiyi1999": {
+      "title": "NM",
+      "platform": "chesscom",
+      "name": null,
+      "games_count": 1989,
+      "analysis": {
+        "total_games": 1989,
+        "time_controls": {
+          "blitz": 791,
+          "bullet": 1197,
+          "daily": 1
+        },
+        "results": {
+          "wins": 991,
+          "losses": 987,
+          "draws": 11
+        },
+        "accuracy_data": [
+          97.8,
+          93.28,
+          83.36,
+          86.19
+        ],
+        "rating_range": {
+          "min": 912,
+          "max": 2700
+        },
+        "openings": {},
+        "win_rate": 49.8,
+        "avg_accuracy": 90.2,
+        "max_accuracy": 97.8,
+        "high_accuracy_games": 1
+      }
+    }
+  }
+}

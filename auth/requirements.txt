@@ -1,0 +1,10 @@
+fastapi==0.117.1
+uvicorn==0.37.0
+sqlalchemy==1.4.49
+argon2-cffi==25.1.0
+pyjwt[crypto]==2.10.1
+pydantic==2.11.9
+pydantic-settings==2.3.4
+python-multipart==0.0.20
+httpx==0.27.2
+email-validator==2.3.0

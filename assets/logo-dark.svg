@@ -1,0 +1,21 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="120" y1="12" x2="120" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14151B"/>
+      <stop offset="1" stop-color="#0A0B0F"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="86" y="162" width="168" height="26" rx="13" fill="#0C0D12"/>
+    <rect x="70" y="188" width="200" height="28" rx="14" fill="#0A0B0F"/>
+    <path d="M120 76C100 76 84 92 84 112C84 127 92 140 104 147L90 218H250L236 147C248 140 256 127 256 112C256 92 240 76 220 76H120Z" fill="url(#paint0_linear)"/>
+    <circle cx="170" cy="60" r="36" fill="#0C0D12"/>
+    <rect x="158" y="20" width="24" height="44" rx="8" fill="#0C0D12"/>
+    <rect x="140" y="32" width="60" height="16" rx="6" fill="#0C0D12"/>
+    <path d="M138 176V104H160V136L194 104H222L184 142L224 204H198L170 160L160 172V204H138V176Z" fill="#F7F8FC"/>
+  </g>
+  <g font-family="'Poppins', 'Segoe UI', sans-serif" font-weight="600" letter-spacing="0.08em" fill="#0E111A">
+    <text font-size="40" x="290" y="118">KRAMNIK</text>
+    <text font-size="28" x="290" y="164">CHESSGUARD</text>
+  </g>
+</svg>

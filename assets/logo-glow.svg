@@ -1,0 +1,28 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="body" x1="120" y1="18" x2="120" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFCFC"/>
+      <stop offset="1" stop-color="#D9D9E2"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="520" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <rect x="86" y="162" width="168" height="26" rx="13" fill="#F7F7F9"/>
+    <rect x="70" y="188" width="200" height="28" rx="14" fill="#ECECF5"/>
+    <path d="M120 76C100 76 84 92 84 112C84 127 92 140 104 147L90 218H250L236 147C248 140 256 127 256 112C256 92 240 76 220 76H120Z" fill="url(#body)"/>
+    <circle cx="170" cy="60" r="36" fill="#F7F7FA"/>
+    <rect x="158" y="20" width="24" height="44" rx="8" fill="#F7F7FA"/>
+    <rect x="140" y="32" width="60" height="16" rx="6" fill="#F7F7FA"/>
+    <path d="M138 176V104H160V136L194 104H222L184 142L224 204H198L170 160L160 172V204H138V176Z" fill="#0F1224"/>
+    <g font-family="'Poppins', 'Segoe UI', sans-serif" font-weight="600" letter-spacing="0.08em" fill="#F9FAFF">
+      <text font-size="40" x="290" y="118">KRAMNIK</text>
+      <text font-size="28" x="290" y="164">CHESSGUARD</text>
+    </g>
+  </g>
+</svg>
